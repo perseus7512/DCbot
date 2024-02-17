@@ -6,7 +6,6 @@ def _init(client):
 	# event 事件處理
 	@client.event
 	async def on_ready():
-		await client.tree.sync(guild=discord.Object(id=1208243110665003020))
 		print(f"「{client.user}」已登入")
 		
 	@client.event
